@@ -10,13 +10,12 @@ public class App
 
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
-
         studentService = new StudentService();
 
         List<Student> students = studentService.findAllStudents();
         for (Student student : students) {
-            System.out.println(student);
+            //System.out.println(student.getStudId(), student.getName(), student.getEmail(), student.getDob().toString());
+            System.out.printf("%d, %s, %s, %s\n", student.getStudId(), student.getName(), student.getEmail(), student.getDob().toString());
         }
     }
 }

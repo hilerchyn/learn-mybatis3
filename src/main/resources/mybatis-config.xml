@@ -8,8 +8,8 @@
         <environment id="development">
             <transactionManager type="JDBC" />
             <dataSource type="POOLED">
-                <property name="driver"   value="com.mysql.jdbc.Driver" />
-                <property name="url"      value="jdbc:mysql://192.168.0.49:3306/test" />
+                <property name="driver"   value="com.mysql.cj.jdbc.Driver" />
+                <property name="url"      value="jdbc:mysql://192.168.0.49:3306/test?serverTimezone=UTC&amp;zeroDateTimeBehavior=convertToNull&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;allowMultiQueries=true" />
                 <property name="username" value="newuser" />
                 <property name="password" value="password" />
             </dataSource>
