@@ -72,6 +72,29 @@
                 </archive>
             </configuration>
         </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>single</goal>
+                    </goals>
+                </execution>
+            </executions>
+            <configuration>
+                <descriptorRefs>
+                    <descriptorRef>jar-with-dependencies</descriptorRef>
+                </descriptorRefs>
+                <!-- spedify entry class -->
+                <archive>
+                    <manifest>
+                        <mainClass>co.shu.App</mainClass>
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
    </plugins>
  </build>
 </project>
