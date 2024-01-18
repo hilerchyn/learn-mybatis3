@@ -12,10 +12,15 @@ public class App
     {
         studentService = new StudentService();
 
+        // get student list
         List<Student> students = studentService.findAllStudents();
         for (Student student : students) {
             //System.out.println(student.getStudId(), student.getName(), student.getEmail(), student.getDob().toString());
             System.out.printf("%d, %s, %s, %s\n", student.getStudId(), student.getName(), student.getEmail(), student.getDob().toString());
         }
+
+        // get one student
+        Student student = studentService.findStudentById(2);
+        System.out.printf("%d, %s, %s, %s\n", student.getStudId(), student.getName(), student.getEmail(), student.getDob().toString());
     }
 }
