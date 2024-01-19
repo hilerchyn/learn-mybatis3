@@ -1,3 +1,4 @@
+```shell
 .
 ├── pom.xml
 ├── README.md
@@ -27,3 +28,4 @@
                     └── AppTest.java
 
 15 directories, 11 files
+```
